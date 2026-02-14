@@ -1,0 +1,130 @@
+{
+  "id": 1,
+  "url": "https://en.wikipedia.org/wiki/Wiki",
+  "title": "Wiki",
+  "summary": "A wiki (/\u02c8w\u026aki/ \u24d8 WICK-ee) is a form of hypertext publication on the internet which is collaboratively edited and managed by its audience directly through a web browser. A typical wiki contains multiple pages that can either be edited by the public or limited to use within an organization for maintaining its internal knowledge base. Its name derives from the first user-editable website called WikiWikiWeb \u2013 wiki (pronounced [wiki][note 1]) is a Hawaiian word meaning 'quick'.",
+  "key_entities": {
+    "people": [
+      "Ward Cunningham",
+      "Bo Leuf",
+      "Vannevar Bush"
+    ],
+    "organizations": [
+      "Wikipedia",
+      "Apple",
+      "Gartner Group",
+      "Central Intelligence Agency",
+      "American Civil Liberties Union",
+      "United States Patent and Trademark Office",
+      "Cornell Law School"
+    ],
+    "locations": [
+      "Honolulu International Airport",
+      "Guant\u00e1namo Bay",
+      "Queens, New York"
+    ]
+  },
+  "sections": [
+    "Definition and Etymology",
+    "Wiki Software and Characteristics",
+    "History and Origins",
+    "Editing and Markup Syntax",
+    "Navigation and Organization",
+    "Security and Community Management",
+    "Enterprise and Academic Applications",
+    "Legal and Copyright Issues"
+  ],
+  "quiz": [
+    {
+      "question": "What is the origin of the word 'wiki' as used in the context of websites?",
+      "options": [
+        "An acronym for 'Web Interactive Knowledge Interface'",
+        "A Hawaiian word meaning 'quick'",
+        "A shortened form of the word 'Wikipedia'",
+        "A technical term for 'linked nodes'"
+      ],
+      "answer": "A Hawaiian word meaning 'quick'",
+      "difficulty": "easy",
+      "explanation": "The term derives from the first wiki, WikiWikiWeb; 'wiki' is a Hawaiian word meaning 'quick'."
+    },
+    {
+      "question": "Who developed the first wiki software and described it as 'the simplest online database that could possibly work'?",
+      "options": [
+        "Vannevar Bush",
+        "Bo Leuf",
+        "Ward Cunningham",
+        "Jimmy Wales"
+      ],
+      "answer": "Ward Cunningham",
+      "difficulty": "medium",
+      "explanation": "Ward Cunningham developed WikiWikiWeb in 1994 and is credited with creating the first wiki software."
+    },
+    {
+      "question": "What naming convention did early wikis use to automatically create links between pages?",
+      "options": [
+        "Double square brackets",
+        "HTML Hyperlinks",
+        "CamelCase",
+        "Numerical IDs"
+      ],
+      "answer": "CamelCase",
+      "difficulty": "hard",
+      "explanation": "Beginning with WikiWikiWeb in 1995, most early wikis used CamelCase (capitalizing words and removing spaces) to automatically generate internal links."
+    },
+    {
+      "question": "Which feature allows wiki users to see the specific differences between two versions of a page?",
+      "options": [
+        "A diff",
+        "A watchlist",
+        "A backlink",
+        "A WikiNode"
+      ],
+      "answer": "A diff",
+      "difficulty": "medium",
+      "explanation": "A 'diff' (short for difference) feature highlights the changes between any two revisions in the edit history."
+    },
+    {
+      "question": "What is the 'soft security' philosophy in the context of wikis?",
+      "options": [
+        "Requiring all users to provide government ID",
+        "Restricting editing rights to only a few experts",
+        "Focusing on making mistakes easy to fix rather than preventing them",
+        "Using advanced encryption for all page content"
+      ],
+      "answer": "Focusing on making mistakes easy to fix rather than preventing them",
+      "difficulty": "medium",
+      "explanation": "Wikis are generally designed so that it is easy to correct mistakes or harmful changes (reverting) rather than attempting to prevent them from happening."
+    },
+    {
+      "question": "In the United States, which law protects wikis from liability for 'Good Samaritan' policing of harmful material?",
+      "options": [
+        "The Wiki Way Act",
+        "Section 230 of the Communications Decency Act",
+        "The GNU Free Documentation License",
+        "The Creative Commons Protection Act"
+      ],
+      "answer": "Section 230 of the Communications Decency Act",
+      "difficulty": "hard",
+      "explanation": "Section 230 protects sites that engage in self-policing of harmful material without requiring a specific level of quality in that policing."
+    },
+    {
+      "question": "What is a 'WikiNode'?",
+      "options": [
+        "A physical server hosting a wiki",
+        "A page that describes and links to other related wikis",
+        "A type of administrative user",
+        "A specific line of code in wiki markup"
+      ],
+      "answer": "A page that describes and links to other related wikis",
+      "difficulty": "medium",
+      "explanation": "WikiNodes act as webrings, allowing users to navigate between different wiki communities that address similar subjects."
+    }
+  ],
+  "related_topics": [
+    "Content Management System (CMS)",
+    "Collaborative Software",
+    "Markup Language",
+    "Knowledge Management",
+    "Open Content License"
+  ]
+}

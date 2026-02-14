@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Quiz Generator</title>
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+    <div id="theme-transition"></div>
+    <div class="container">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">🌙</button>
+        <header>
+            <h1>Wiki Quiz Generator</h1>
+            <nav>
+                <button id="tab-gen" class="tab-btn active" onclick="switchTab('generate')">Generate Quiz</button>
+                <button id="tab-hist" class="tab-btn" onclick="switchTab('history')">History</button>
+            </nav>
+        </header>
+
+        <!-- Tab 1: Generate Quiz -->
+        <section id="generate-section" class="tab-content active">
+            <div class="input-group">
+                <textarea id="wiki-url" rows="3"
+                    placeholder="Enter Wikipedia Article URLs (one per line)&#10;Example:&#10;https://en.wikipedia.org/wiki/Alan_Turing&#10;https://en.wikipedia.org/wiki/Artificial_intelligence"></textarea>
+                <button id="generate-btn" onclick="generateQuiz()">Generate Quiz</button>
+            </div>
+            <div id="loading" class="hidden">Generating Quiz... Please wait...</div>
+            <div id="error-msg" class="hidden error"></div>
+
+            <div id="quiz-result" class="hidden">
+                <div class="card summary-card">
+                    <h2 id="article-title"></h2>
+                    <p id="article-summary"></p>
+                    <div class="tags" id="key-entities"></div>
+                </div>
+
+                <div id="questions-container">
+                    <!-- Questions will be injected here -->
+                </div>
+
+                <div class="card related-card">
+                    <h3>Related Topics</h3>
+                    <ul id="related-topics"></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 2: History -->
+        <section id="history-section" class="tab-content">
+            <h2>Past Quizzes</h2>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- History rows injected here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Details Modal -->
+    <div id="details-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js?v=5"></script>
+</body>
+
+</html>

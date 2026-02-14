@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+langchain
+langchain-google-genai
+python-dotenv
+sqlmodel
+psycopg2-binary

@@ -1,0 +1,80 @@
+{
+    "id": 1,
+    "url": "https://en.wikipedia.org/wiki/Alan_Turing",
+    "title": "Alan Turing",
+    "summary": "Alan Mathison Turing OBE FRS was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence.",
+    "key_entities": {
+        "people": [
+            "Alan Turing",
+            "Alonzo Church",
+            "Hugh Alexander",
+            "Joan Clarke"
+        ],
+        "organizations": [
+            "University of Cambridge",
+            "Government Code and Cypher School",
+            "National Physical Laboratory",
+            "University of Manchester"
+        ],
+        "locations": [
+            "Maida Vale",
+            "London",
+            "Bletchley Park",
+            "United Kingdom"
+        ]
+    },
+    "sections": [
+        "Early life and education",
+        "Career and research",
+        "Cryptanalysis",
+        "Early computers and the Turing test",
+        "Personal life",
+        "Death",
+        "Legacy"
+    ],
+    "quiz": [
+        {
+            "question": "Which machine is Alan Turing considered to have provided a formalisation for?",
+            "options": [
+                "The Difference Engine",
+                "The Turing machine",
+                "The Analytical Engine",
+                "The Enigma Machine"
+            ],
+            "answer": "The Turing machine",
+            "difficulty": "Easy",
+            "explanation": "Turing provided a formalisation of the concepts of algorithm and computation with the Turing machine."
+        },
+        {
+            "question": "During World War II, where did Turing work for the Government Code and Cypher School?",
+            "options": [
+                "London",
+                "Manchester",
+                "Bletchley Park",
+                "Cambridge"
+            ],
+            "answer": "Bletchley Park",
+            "difficulty": "Medium",
+            "explanation": "During the Second World War, Turing worked for the Government Code and Cypher School (GC&CS) at Bletchley Park, Britain's codebreaking centre."
+        },
+        {
+            "question": "What was the name of the electromechanical machine Turing specified to help break Enigma?",
+            "options": [
+                "The Colossus",
+                "The Bombe",
+                "The Ace",
+                "The Christopher"
+            ],
+            "answer": "The Bombe",
+            "difficulty": "Hard",
+            "explanation": "Turing played a pivotal role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis in many crucial engagements, including the Battle of the Atlantic, largely through the specification of the bombe."
+        }
+    ],
+    "related_topics": [
+        "Turing test",
+        "Enigma machine",
+        "History of artificial intelligence",
+        "Universal Turing machine",
+        "Cryptanalysis of the Enigma"
+    ]
+}

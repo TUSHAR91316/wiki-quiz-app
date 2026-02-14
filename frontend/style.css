@@ -1,0 +1,458 @@
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-color: #1f2937;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e5e7eb;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Input Section */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+button#generate-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button#generate-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.summary-card h2 {
+    margin-top: 0;
+}
+
+.tags {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #6b7280;
+}
+
+.tags span {
+    background-color: #e5e7eb;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Questions */
+.question-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.question-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.options-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options-list li {
+    background-color: #f9fafb;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+.answer-section {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #e5e7eb;
+    font-size: 0.9em;
+}
+
+.correct-answer {
+    color: #059669;
+    font-weight: bold;
+}
+
+.explanation {
+    color: #4b5563;
+    margin-top: 5px;
+}
+
+.difficulty {
+    float: right;
+    font-size: 0.8em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.diff-easy {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.diff-medium {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.diff-hard {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+}
+
+.view-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    width: 80%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.error {
+    color: #dc2626;
+    background-color: #fee2e2;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+/* --- Theme Toggle Button --- */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.theme-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --- Interactive Quiz Styles --- */
+.options-list li {
+    background-color: #f9fafb;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Clickable */
+    transition: all 0.2s;
+}
+
+.options-list li:hover {
+    background-color: #e5e7eb;
+}
+
+.options-list li.selected-correct {
+    background-color: #d1fae5;
+    border-color: #059669;
+    color: #064e3b;
+    font-weight: bold;
+}
+
+.options-list li.selected-wrong {
+    background-color: #fee2e2;
+    border-color: #dc2626;
+    color: #991b1b;
+}
+
+.options-list li.correct-highlight {
+    background-color: #d1fae5;
+    /* Show correct if wrong was picked */
+    border: 2px solid #059669;
+}
+
+.options-list li.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Dark Mode Variables & Overrides */
+body.dark-mode {
+    --bg-color: #111827;
+    --card-bg: #1f2937;
+    --text-color: #f3f4f6;
+    color: var(--text-color);
+}
+
+body.dark-mode .theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .tab-btn {
+    background-color: #374151;
+    color: #d1d5db;
+}
+
+body.dark-mode .tab-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: white;
+}
+
+body.dark-mode table {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+body.dark-mode th {
+    background-color: #374151;
+    color: #f3f4f6;
+}
+
+body.dark-mode td {
+    border-bottom: 1px solid #374151;
+}
+
+body.dark-mode .modal-content {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+}
+
+body.dark-mode .options-list li {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode .options-list li:hover {
+    background-color: #4b5563;
+}
+
+body.dark-mode .tags span {
+    background-color: #374151;
+    color: #e5e7eb;
+}
+
+body.dark-mode .diff-easy {
+    background-color: #064e3b;
+    color: #6ee7b7;
+}
+
+body.dark-mode .diff-medium {
+    background-color: #78350f;
+    color: #fcd34d;
+}
+
+body.dark-mode .diff-hard {
+    background-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+body.dark-mode .explanation {
+    color: #9ca3af;
+}
+
+/* Dark Mode Quiz Feedback */
+body.dark-mode .options-list li.selected-correct {
+    background-color: rgba(6, 95, 70, 0.5);
+    /* Darker green bg */
+    border: 2px solid #34d399;
+    /* Bright green border */
+    color: #34d399;
+}
+
+body.dark-mode .options-list li.selected-wrong {
+    background-color: rgba(153, 27, 27, 0.5);
+    /* Darker red bg */
+    border: 2px solid #f87171;
+    /* Bright red border */
+    color: #f87171;
+}
+
+body.dark-mode .options-list li.correct-highlight {
+    background-color: rgba(6, 95, 70, 0.5);
+    border: 2px solid #34d399;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.3);
+    /* Glow effect */
+}
+
+/* Score Card */
+.score-card {
+    text-align: center;
+    background-color: #e0e7ff;
+    /* Light Indigo */
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+}
+
+body.dark-mode .score-card {
+    background-color: rgba(37, 99, 235, 0.2);
+    border-color: var(--primary-color);
+    color: #93c5fd;
+}
+
+/* Helper for hidden elements */
+.hidden {
+    display: none !important;
+}
