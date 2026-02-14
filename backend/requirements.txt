@@ -1,9 +1,13 @@
 fastapi
 uvicorn
+sqlmodel
 requests
 beautifulsoup4
+python-dotenv
 langchain
 langchain-google-genai
+psycopg2-binary
+gunicorn
 python-dotenv
 sqlmodel
 psycopg2-binary
